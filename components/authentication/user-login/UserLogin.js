@@ -3,8 +3,8 @@ import {signInWithEmailAndPassword} from "firebase/auth"
 import { useRouter } from "next/router"
 
 import {auth} from "../../../lib/firebase"
-import TextInput from "../../../ui/forms/TextInput"
-import { Button } from "../../../ui/buttons"
+import TextInput from "../../ui/forms/TextInput"
+import { Button } from "../../ui/buttons"
 import Login from "./styled"
  
  

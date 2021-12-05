@@ -3,9 +3,9 @@ import { useRouter } from 'next/router';
 import { GoogleAuthProvider, signInWithPopup } from '@firebase/auth';
 import { useState } from 'react';
 
-import { useAuth } from '../../../../lib/hooks/useAuth';
-import {auth} from '../../../../lib/firebase';
-import { ProviderButton } from "../../../../ui/buttons";
+import { auth } from "../../../../lib/firebase";
+import { useAuth } from "../../../../lib/hooks/useAuth";
+import { ProviderButton } from "../../../ui/buttons";
 import google from "./google.png";
 
 function GoogleProvider({ children,  ...props }) {

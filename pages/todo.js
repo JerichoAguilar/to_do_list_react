@@ -1,6 +1,6 @@
 import {useAuth} from "../lib/hooks/useAuth"
 import { AppBar } from "../components/appbar";
-import {Title} from "../ui/title"
+import {Title} from "../components/ui/title"
 
 
 function ToDoPage(props) {

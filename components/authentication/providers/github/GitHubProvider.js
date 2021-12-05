@@ -3,10 +3,10 @@ import {useRouter} from "next/router"
 import { GithubAuthProvider, signInWithPopup } from "@firebase/auth";
 import {useState} from "react";
 
-import {auth} from "../../../../lib/firebase";
+import { auth } from "../../../../lib/firebase";
 import { useAuth } from "../../../../lib/hooks/useAuth";
-import { ProviderButton } from "../../../../ui/buttons";
-import github from "./github.png";
+import { ProviderButton } from "../../../ui/buttons";
+import github from './github.png';
 
 function GitHubProvider({ children, ...props }) {
   const user = useAuth();

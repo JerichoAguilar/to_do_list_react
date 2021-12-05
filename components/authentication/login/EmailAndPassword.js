@@ -1,5 +1,5 @@
- import TextInput from "../../../ui/forms/TextInput"
- import { Button } from "../../../ui/buttons"
+ import TextInput from "../../ui/forms/TextInput"
+ import { Button } from "../../ui/buttons"
 import Login from "./styled"
   
  function EmailAndPassword(props) {

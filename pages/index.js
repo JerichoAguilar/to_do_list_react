@@ -1,11 +1,11 @@
 import {GoogleProvider} from "../components/authentication/providers";
 import { GitHubProvider } from "../components/authentication/providers";
 import {AppBar} from "./../components/appbar"
-import {Title} from "./../ui/title"
-import {Spacer} from "./../ui/spacers"
+import {Title} from "../components/ui/title"
+import {Spacer} from "../components/ui/spacers"
 import {UserLogin} from "../components/authentication/user-login"
 import {EmailAndPassword} from "../components/authentication/login"
-import {Legal, HighLight} from "../ui/legal"
+import {Legal, HighLight} from "../components/ui/legal"
 import {PageLayout, PageHeader, PageFooter, PageContent} from "../layouts/loginpage"
 function index (){  
   return(
