@@ -1,4 +1,4 @@
-import { AppBar } from "components/appbar";
+import { AppBar } from "../components/appbar";
 import {Title} from "../ui/title"
 
 
