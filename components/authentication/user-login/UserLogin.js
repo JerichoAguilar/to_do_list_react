@@ -1,5 +1,6 @@
 import {useState} from "react"
 import {signInWithEmailAndPassword} from "firebase/auth"
+import { useRouter } from "next/router"
 
 import {auth} from "../../../lib/firebase"
 import TextInput from "../../../ui/forms/TextInput"
@@ -10,13 +11,17 @@ import Login from "./styled"
 function UserLogin ({...props}){
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const router = useRouter();
 
     async function handleClick(e){
         e.preventDefault();
 
         const isUser = await signInWithEmailAndPassword(auth, email, password);
         
-        console.log(isUser);
+        if(isUser){
+            router.push('/todo');
+        }
+        
     }
    
     return (

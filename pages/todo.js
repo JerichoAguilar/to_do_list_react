@@ -1,15 +1,26 @@
+import {useAuth} from "../lib/hooks/useAuth"
 import { AppBar } from "../components/appbar";
 import {Title} from "../ui/title"
 
 
 function ToDoPage(props) {
-   
-    return (
-      <>
-        <AppBar />
-        <Title> Please Go Away</Title>
-      </>
-    )
+   const user = useAuth();
+    if(user){
+      return (
+        <>
+          <AppBar />
+          <Title>Render And Build To Do List</Title>
+        </>
+      )
+    }
+    else{
+      return (
+        <>
+          <AppBar />
+          <Title>Please Go Way</Title>
+        </>
+      )
+    }
   
 }
 
