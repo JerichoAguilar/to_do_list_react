@@ -1,13 +1,32 @@
-import Button from '../components/ui/button';
-
-export default function Home() {
-  return (
-     <div>
-       <Button>Login With Google</Button>
-       <Button>Login With Email</Button>
-     </div>
-     
-       
-    
+import {GoogleProvider} from "../components/authentication/providers";
+import {AppBar} from "./../components/appbar"
+import {Title} from "./../ui/title"
+import {Spacer} from "./../ui/spacers"
+import {UserLogin} from "../components/authentication/user-login"
+import {EmailAndPassword} from "../components/authentication/login"
+import {Legal, HighLight} from "../ui/legal"
+import {PageLayout, PageHeader, PageFooter, PageContent} from "../layouts/loginpage"
+function index (){  
+  return(
+    <>
+          <AppBar/>
+          <PageLayout>
+          <PageHeader>
+          <Title>Account Login</Title>
+          </PageHeader>
+          <PageContent>
+          <GoogleProvider>With Google</GoogleProvider>
+          <Spacer>OR</Spacer>
+          <UserLogin/>
+          </PageContent>
+          <PageFooter>
+          <Legal>Legal Stuff <HighLight>Terms and Conditions</HighLight></Legal>
+          </PageFooter>
+          </PageLayout>
+    </>
   )
 }
+
+
+
+export default index;
