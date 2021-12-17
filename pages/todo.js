@@ -1,6 +1,8 @@
-import {useAuth} from "../lib/hooks/useAuth"
+import {useAuth} from "../lib/hooks/useAuth";
 import { AppBar } from "../components/appbar";
 import {Title} from "../components/ui/title"
+import {Button} from "../components/ui/buttons";
+import Link from "next/link";
 
 
 function ToDoPage(props) {
@@ -10,6 +12,9 @@ function ToDoPage(props) {
         <>
           <AppBar />
           <Title>Render And Build To Do List</Title>
+          <Button>
+              <Link href="/add-item"><a>Add New Item</a></Link>
+          </Button>
         </>
       )
     }
